@@ -15,6 +15,7 @@ public class TechniqueSet {
     private ArrayList<Technique> techniques = new ArrayList<>();
 
     public static final TechniqueSet SohnPpaeKi = new TechniqueSet(new SpokenName("Sohn Ppae Ki","Sohn Pae Ki"),5);
+    public static final TechniqueSet KiBohnSoo = new TechniqueSet(new SpokenName("Ki Bohn Soo","Key Bohn Sue"),15);
 
     public TechniqueSet(SpokenName techSetName, int techniqueCount){
         this.techSetName = techSetName;
@@ -27,7 +28,7 @@ public class TechniqueSet {
 
     public String getWrittenName() {return techSetName.name;}
 
-    public String getPhoneticName() {return techSetName.pronunciation;}
+    public String getPronunciation() {return techSetName.pronunciation;}
 
     public int getTechniqueCount(){return techniqueCount;}
 
